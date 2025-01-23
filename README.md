@@ -2,7 +2,7 @@
 
 # Zynk UI
 
-**Zynk UI** is a modern, minimalist UI component library built with **Next.js**, **Tailwind CSS**, and **Framer Motion**, designed to help developers build stunning web applications effortlessly.
+**Zynk UI** is a Open-Source modern, minimalist UI component library built with **Next.js**, **Tailwind CSS**, and **Framer Motion**, designed to help developers build stunning web applications effortlessly.
 
 ![Zynk UI Hero](https://your-image-url.com/hero-image.png)
 
