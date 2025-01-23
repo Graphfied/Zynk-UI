@@ -1,6 +1,6 @@
 
-```md
-## Zynk UI
+
+# Zynk UI
 
 **Zynk UI** is a modern, minimalist UI component library built with **Next.js**, **Tailwind CSS**, and **Framer Motion**, designed to help developers build stunning web applications effortlessly.
 
