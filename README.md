@@ -150,13 +150,4 @@ If you find **Zynk UI** helpful, please give us a **star ⭐** on GitHub and sha
 Made with ❤️ by the Zynk UI Team
 ```
 
----
 
-### **How to Use This README:**
-1. Replace the placeholder links (e.g., `https://your-image-url.com/hero.png`) with actual URLs for your project.
-2. Update the GitHub repository link with your actual repo.
-3. Add relevant contributor credits if needed.
-
----
-
-Let me know if you need any improvements or additions! 🚀
