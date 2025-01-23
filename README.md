@@ -30,7 +30,7 @@ Zynk UI doesn't require any npm package installation. Simply copy and paste comp
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/zynk-ui.git
+git clone https://github.com/Graphfied/Zynk-UI.git
 cd zynk-ui
 ```
 
