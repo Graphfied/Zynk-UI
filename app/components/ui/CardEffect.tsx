@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import CopyToClipboard from 'react-copy-to-clipboard';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const CardEffect = () => {
     const [activeTab, setActiveTab] = useState<'preview' | 'code'>('preview');

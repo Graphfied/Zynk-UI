@@ -13,6 +13,10 @@ const componentsList = [
     { name: 'Hero Section', slug: 'hero-section' },
     { name: 'Testimonials Carousel', slug: 'testimonials-carousel' },
     { name: 'Discord Profile Card', slug: 'discord-profile-card' },
+    { name: 'Hacker Background', slug: 'hacker-background' },
+    { name: 'Command Line', slug: 'command-line' },
+    { name: 'Card', slug: 'card' },
+    { name: 'Spotlight Card', slug: 'spotlight-card' },
 
 ];
 
@@ -26,6 +30,10 @@ const componentMapping: Record<string, ComponentType> = {
     'hero-section': dynamic(() => import('../components/ui/HeroSection')),
     'testimonials-carousel': dynamic(() => import('../components/ui/TestimonialsCarousel')),
     'discord-profile-card': dynamic(() => import('../components/ui/DiscordProfileCard')),
+    'hacker-background': dynamic(() => import('../components/ui/HackerBackgroundComponent')),
+    'command-line': dynamic(() => import('../components/ui/commandline')),
+    'card': dynamic(() => import('../components/ui/Card')),
+    'spotlight-card': dynamic(() => import('../components/ui/SpotlightCard')),
 };
 
 export default function DocPage() {
