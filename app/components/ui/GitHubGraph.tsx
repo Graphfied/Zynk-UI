@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import GitHubCalendar from 'react-github-calendar';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import CopyToClipboard from 'react-copy-to-clipboard';
 
 const GitHubGraph = () => {
     const [activeTab, setActiveTab] = useState<'preview' | 'code'>('preview');
