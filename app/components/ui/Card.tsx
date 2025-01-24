@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+
 
 const Card = () => {
     const [activeTab, setActiveTab] = useState<"preview" | "code">("preview");
-    const [copied, setCopied] = useState(false);
 
     const codeSnippet = `<div className="max-w-sm w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
   <div className="h-[15rem] rounded-xl bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)]">
@@ -123,11 +122,7 @@ const Card = () => {
                         <pre className="bg-gray-800 p-4 rounded-lg text-gray-300 overflow-x-auto whitespace-pre-wrap">
                             {codeSnippet}
                         </pre>
-                        <CopyToClipboard text={codeSnippet} onCopy={() => setCopied(true)}>
-                            <button className="absolute top-2 right-2 bg-gray-700 text-white px-3 py-1 rounded hover:bg-gray-600 transition-all">
-                                {copied ? "Copied!" : "Copy"}
-                            </button>
-                        </CopyToClipboard>
+
                     </div>
                 )}
             </div>

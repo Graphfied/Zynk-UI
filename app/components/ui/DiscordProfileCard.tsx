@@ -1,10 +1,8 @@
 import { useState } from 'react';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Image from 'next/image';
 
 const DiscordProfileCard = () => {
     const [activeTab, setActiveTab] = useState<'preview' | 'code'>('preview');
-    const [copied, setCopied] = useState(false);
 
     const codeSnippet = `<div className="max-w-sm bg-[#23272A] rounded-lg shadow-lg border border-gray-700 p-4">
   <div className="relative">
@@ -84,11 +82,6 @@ const DiscordProfileCard = () => {
                         <pre className="bg-zinc-900 p-4 rounded-lg text-gray-300 overflow-x-auto whitespace-pre-wrap">
                             {codeSnippet}
                         </pre>
-                        <CopyToClipboard text={codeSnippet} onCopy={() => setCopied(true)}>
-                            <button className="absolute top-2 right-2 bg-gray-700 text-white px-3 py-1 rounded hover:bg-gray-600 transition-all">
-                                {copied ? 'Copied!' : 'Copy'}
-                            </button>
-                        </CopyToClipboard>
                     </div>
                 )}
             </div>

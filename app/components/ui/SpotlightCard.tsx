@@ -1,12 +1,17 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+
+import { ReactNode } from "react";
 
 const SpotlightCard = ({
     children,
     className = "",
     spotlightColor = "rgba(255, 255, 255, 0.25)",
+}: {
+    children: ReactNode;
+    className?: string;
+    spotlightColor?: string;
 }) => {
     const divRef = useRef<HTMLDivElement>(null);
     const [isFocused, setIsFocused] = useState(false);
@@ -64,7 +69,6 @@ const SpotlightCard = ({
 
 const SpotlightCardComponent = () => {
     const [activeTab, setActiveTab] = useState<"preview" | "code">("preview");
-    const [copied, setCopied] = useState(false);
 
     const codeSnippet = `<SpotlightCard className="w-80 h-40">
   <p className="text-white text-lg font-medium">Spotlight Card</p>
@@ -106,11 +110,6 @@ const SpotlightCardComponent = () => {
                         <pre className="bg-zinc-90w0 p-4 rounded-lg text-gray-300 overflow-x-auto whitespace-pre-wrap">
                             {codeSnippet}
                         </pre>
-                        <CopyToClipboard text={codeSnippet} onCopy={() => setCopied(true)}>
-                            <button className="absolute top-2 right-2 bg-gray-700 text-white px-3 py-1 rounded hover:bg-gray-600 transition-all">
-                                {copied ? "Copied!" : "Copy"}
-                            </button>
-                        </CopyToClipboard>
                     </div>
                 )}
             </div>

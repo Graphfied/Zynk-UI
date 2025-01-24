@@ -1,10 +1,8 @@
 import { useState } from 'react';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 import HackerBackground from '../ui/HackerBackground'
 
 const HackerBackgroundComponent = () => {
     const [activeTab, setActiveTab] = useState<'preview' | 'code'>('preview');
-    const [copied, setCopied] = useState(false);
 
     const codeSnippet = `Code Coming Soon`;
 
@@ -44,11 +42,6 @@ const HackerBackgroundComponent = () => {
                         <pre className="bg-gray-800 p-4 rounded-lg text-gray-300 overflow-x-auto whitespace-pre-wrap">
                             {codeSnippet}
                         </pre>
-                        <CopyToClipboard text={codeSnippet} onCopy={() => setCopied(true)}>
-                            <button className="absolute top-2 right-2 bg-gray-700 text-white px-3 py-1 rounded hover:bg-gray-600 transition-all">
-                                {copied ? 'Copied!' : 'Copy'}
-                            </button>
-                        </CopyToClipboard>
                     </div>
                 )}
             </div>
